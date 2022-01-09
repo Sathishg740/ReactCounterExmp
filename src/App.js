@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter from './useReducer/Counter';
+import Memo from './useMemo/Memo';
+import Parent from './useCallback/Parent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>useReducer Example</h1>
+      <Counter />
+        </div> 
+        <hr/>
+        <div>
+          <h1>useMemo Example</h1>
+           <Memo />
+           </div>
+         <hr/>
+        <div> 
+          <h1>useCallback Example</h1>
+          <Parent /></div>
+       
     </div>
   );
 }
